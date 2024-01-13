@@ -18,8 +18,7 @@ class DrawCircleNode(Node):
     def send_velocity_command(self):
         msg = Twist()
         msg.linear.x = 3.0
-        msg.angular.z = 1.8 
-        
+        msg.angular.z = 1.5 
         #to publish the message we call the publish method on the publisher object
         self.cmd_vel_pub.publish(msg)
 def main(args=None):
